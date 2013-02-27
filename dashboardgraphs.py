@@ -33,7 +33,7 @@ finally:
 
 template =  "<!DOCTYPE html>\n"
 template += "<html><head><title>All Graphs</title>\n"
-template += "<link href='flot/examples/examples.css' rel='stylesheet' type='text/css'>\n"
+template += "<link href='styles.css' rel='stylesheet' type='text/css'>\n"
 #template += "<!--[if lte IE 8]><script language='javascript' type='text/javascript' src='flot/excanvas.min.js'>$"
 template += "<script language='javascript' type='text/javascript' src='flot/jquery.js'></script>\n"
 template += "<script language='javascript' type='text/javascript' src='flot/jquery.flot.js'></script>\n"
