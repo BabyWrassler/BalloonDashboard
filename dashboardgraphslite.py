@@ -24,8 +24,8 @@ try:
   #for row in rows:
   #   print row[3]
 
-except mdb.Error, e:
-    print "Error %d: %s" % (e.args[0],e.args[1])
+except db.Error, e:
+    print "Error %s:" % e.args[0]
     sys.exit(1)
     
 finally:    
@@ -220,7 +220,7 @@ template += "</script>\n"
 template += "</head><body>\n"
 template += '<div id="content">\n'
 
-template += '<div id="page-header"><h1>NSL-9 Data Dashboard</h1></div>'
+template += '<div id="page-header"><h1>NSL-10 Data Dashboard</h1></div>'
 
 template += '<div class="chart-container">\n'
 template += '<div id="header"><h2>Map</h2></div>\n'

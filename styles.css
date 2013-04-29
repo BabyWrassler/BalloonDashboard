@@ -7,10 +7,19 @@ body {
 
 a {	color: #069; }
 a:hover { color: #28b; }
+h1 {
+        margin-top: 0px;
+        margin-bottom: 5px;
+        font: normal 48px "omnes-pro", Helvetica, Arial, sans-serif;
+}
 
 h2 {
 	margin-top: 5px;
 	font: normal 32px "omnes-pro", Helvetica, Arial, sans-serif;
+}
+
+#statbox h2 {
+	margin-bottom:5px;
 }
 
 h3 {
@@ -20,7 +29,30 @@ h3 {
 }
 
 p {
-	margin-top: 10px;
+	margin-top: 0px;
+}
+
+
+#statbox
+{
+    float:left;
+    margin:0px;
+    padding-left:15px;
+}
+
+#idimage
+{    
+    float:left;
+}
+#imagetext
+{
+    z-index:100;
+    position:absolute;    
+    color:white;
+    font-size:24px;
+    font-weight:bold;
+    left:150px;
+    top:350px;
 }
 
 button {
