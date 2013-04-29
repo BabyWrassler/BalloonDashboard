@@ -40,7 +40,7 @@ template += '<div id="content">\n'
 # ENTER CALL SIGN HERE:
 template += '<div id="page-header"><h1>WJ3FF-3</h1></div>'
 
-template += '<img id="idimage" src="latest.jpg" width="600">'
+template += '<img id="idimage" src="latest.jpg">'
 
 template += '<div id="statbox">'
 
