@@ -34,50 +34,46 @@ template =  "<!DOCTYPE html>\n"
 template += "<html><head><title>Station ID</title>\n"
 template += "<link href='styles.css' rel='stylesheet' type='text/css'>\n"
 template += "</head><body>\n"
+
 template += '<div id="content">\n'
 
 # ENTER CALL SIGN HERE:
-template += '<div id="page-header"><h1>call sign here</h1></div>'
+template += '<div id="page-header"><h1>WJ3FF-3</h1></div>'
 
-template += '<img id="idimage" src="latest.jpg" width="800">'
+template += '<img id="idimage" src="latest.jpg" width="600">'
 
 template += '<div id="statbox">'
 
-template += "<h2>NSL-10 Status</h2>"
+template += "<h2>NSL-10</h2>"
 
-template += "<p>Time: "
-template += rows[0][3]
+template += '<p id="odd">Time: '
+template += (rows[0][3])[11:] # Chopping off date
 template += "</p>\n"
 
-template += "<p>Barometric Altimeter: "
+template += '<p id="even">B Alt: '
 template += str(rows[0][20])
 template += "</p>\n"
 
-template += "<p>GPS Altitude: "
+template += '<p id="odd">GPS Alt: '
 template += str(rows[0][2])
 template += "</p>\n"
 
-template += "<p>Latitude: "
-template += str(rows[0][0])
+template += '<p id="even">Lat: '
+template += (str(rows[0][0]))[:8] # Truncating
 template += "</p>\n"
-template += "<p>Longitude: "
-template += str(rows[0][1])
-template += "</p>\n"
-
-# I intended this line to show the computed heading
-template += "<p>Heading: "
-template += "Not Implemented"
+template += '<p id="odd">Long: '
+template += (str(rows[0][1]))[:8] # Truncating
 template += "</p>\n"
 
-template += "<p>Air Pressure: "
+template += '<p id="even">Pressure: '
 template += str(rows[0][19])
 template += "</p>\n"
 
-template += "<p>P Temperature: "
+template += '<p id="odd">P Temp: '
 template += str(rows[0][21])
 template += "</p>\n"
 
-template += "<p>G Temperature: "
+template += '<p id="even">G Temp: '
 template += str(rows[0][18])
 template += "</p>\n"
 

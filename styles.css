@@ -10,7 +10,7 @@ a:hover { color: #28b; }
 h1 {
         margin-top: 0px;
         margin-bottom: 5px;
-        font: normal 48px "omnes-pro", Helvetica, Arial, sans-serif;
+        font: bold 48px "omnes-pro", Helvetica, Arial, sans-serif;
 }
 
 h2 {
@@ -20,6 +20,7 @@ h2 {
 
 #statbox h2 {
 	margin-bottom:5px;
+        margin-left: 8px;
 }
 
 h3 {
@@ -28,31 +29,41 @@ h3 {
 	color: #666;
 }
 
+#even {
+	display: block;
+	padding: 0px 3px 0px 3px;
+	background-color: #e4efef;
+}
+
+#odd {
+	display: block;
+	padding: 0px 3px 0px 3px;
+	background-color: #e4eeff;
+}
+
 p {
 	margin-top: 0px;
 }
 
+#statbox p {
+	margin-top:15px;
+	margin-bottom:15px;
+}
 
 #statbox
 {
+    width: 185px;
+    font-size:24px;
+    font-weight:bold;
     float:left;
-    margin:0px;
-    padding-left:15px;
+    margin-left:10px;
+    padding: 0px;
+    border: 0px solid;
 }
 
 #idimage
 {    
     float:left;
-}
-#imagetext
-{
-    z-index:100;
-    position:absolute;    
-    color:white;
-    font-size:24px;
-    font-weight:bold;
-    left:150px;
-    top:350px;
 }
 
 button {
@@ -62,10 +73,6 @@ button {
 
 input {
 	font-size: 18px;
-}
-
-input[type=checkbox] {
-	margin: 7px;
 }
 
 #page-header {
@@ -90,7 +97,7 @@ input[type=checkbox] {
 }
 
 #content {
-	width: 100%;
+	width: 800px;
 	margin: 0 auto;
 	padding: 10px;
 }
