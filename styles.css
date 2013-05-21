@@ -15,7 +15,8 @@ h1 {
 
 h2 {
 	margin-top: 5px;
-	font: normal 32px "omnes-pro", Helvetica, Arial, sans-serif;
+	margin-bottom: 5px;
+	font: bold 30px "omnes-pro", Helvetica, Arial, sans-serif;
 }
 
 #statbox h2 {
@@ -52,12 +53,12 @@ p {
 
 #idimage
 {
-	width:550px;
+	width:500px;
 }
 
 #statbox
 {
-    width: 235px;
+    width: 255px;
     font-size:24px;
     font-weight:bold;
     float:left;
@@ -102,9 +103,10 @@ input {
 }
 
 #content {
-	width: 800px;
-	margin: 0 auto;
-	padding: 10px;
+
+	width: 790px;
+	margin: 0px;
+	padding-left: 10px;
 }
 
 #footer {
