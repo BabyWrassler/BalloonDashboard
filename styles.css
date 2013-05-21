@@ -54,6 +54,7 @@ p {
 #idimage
 {
 	width:500px;
+	float:left;
 }
 
 #statbox
@@ -67,10 +68,6 @@ p {
     border: 0px solid;
 }
 
-#idimage
-{    
-    float:left;
-}
 
 button {
 	font-size: 18px;
