@@ -9,20 +9,25 @@ import cgitb
 cgitb.enable()
 import cgi
 
+
 def openDB():
   global con
   DB_FILENAME = "../data/10DOF_data.db"
   con = db.connect(DB_FILENAME)
 
-openDB()
+try:
+    openDB()
+except db.Error, e:
+    print "<!DOCTYPE html><head><meta http-equiv='refresh' content='30'></head>Error %s:</html>" % e.args[0]
+    sys.exit(1)
 
 try:
-  cur = con.cursor()
-  cur.execute('select * from Sensors order by TimeG desc limit 1')
-  rows = cur.fetchall()
+    cur = con.cursor()
+    cur.execute('select * from Sensors order by TimeG desc limit 1')
+    rows = cur.fetchall()
 
 except db.Error, e:
-    print "Error %s:" % e.args[0]
+    print "<!DOCTYPE html><head><meta http-equiv='refresh' content='30'></head>Error %s:</html>" % e.args[0]
     sys.exit(1)
     
 finally:    
@@ -31,7 +36,7 @@ finally:
 
 
 template =  "<!DOCTYPE html>\n"
-template += "<html><head><title>Station ID</title>\n"
+template += "<html><head><meta http-equiv='refresh' content='30'><title>Station ID</title>\n" # EDIT REFRESH TIME HERE
 template += "<link href='styles.css' rel='stylesheet' type='text/css'>\n"
 template += "</head><body>\n"
 
